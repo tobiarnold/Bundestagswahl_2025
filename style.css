@@ -37,6 +37,7 @@ th, td {
     border: 1px solid #ddd;
     padding: 12px;
     text-align: left;
+    color: black
     white-space: normal; 
     word-break: normal;  
     word-wrap: break-word;  
@@ -67,9 +68,12 @@ td ul {
     justify-content: center;
     align-items: center;
     margin: 20px auto; }
+p {
+    color: #333; 
+}
 @media (max-width: 768px) {
     table {
-        font-size: 9px;
+        font-size: 10px;
         table-layout: auto; 
         border-collapse: collapse;
         width: 100%;}
@@ -85,4 +89,8 @@ td ul {
         max-width: 100%; }
     #partyFilter {
         font-size: 16px;
-        padding: 8px 12px; }}
+        padding: 8px 12px; }
+        p {
+        font-size: 12px; 
+        color: black; }
+}
