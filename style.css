@@ -72,35 +72,25 @@ p {
     color: #333; 
 }
 @media (max-width: 768px) {
-    p {font-size: 6px;
-        color: black;}
+       p {
+        font-size: 4px; 
+        color: black; }
     table {
-        font-size: 12px;  /* Adjust font size for better readability */
-        table-layout: fixed; /* Ensure equal distribution of column widths */
-        width: 100%;
-        word-wrap: break-word;  /* Ensure text wraps within cells */}
-  th, td {
-        padding: 8px;
-        text-align: left;
-        word-wrap: break-word;  /* Prevent long words from breaking out of cells */
-        white-space: normal; /* Allow text to break into multiple lines if needed */}
- .table-container {
+        font-size: 12px;
+        table-layout: auto; 
+        border-collapse: collapse;
+        width: 100%;}
+    th, td {
+        padding: 6px;
+        text-align: left;}
+    .table-container {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         max-width: 100%; }
     .wordcloud {
         width: 100%; 
-     max-width: 100%;}
+        max-width: 100%; }
     #partyFilter {
         font-size: 16px;
-     padding: 8px 12px;  }
-    table {
-        display: block; }
-    table th, table td {
-        display: block;
-        width: 100%; 
-        text-align: right;  }
-   table tr {
-        margin-bottom: 10px; 
-        border-bottom: 1px solid #ddd;  }
+        padding: 8px 12px; }
 }
