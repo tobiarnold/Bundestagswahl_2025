@@ -72,8 +72,8 @@ p {
     color: #333; 
 }
 @media (max-width: 768px) {
-       p {
-        font-size: 4px; 
+       u {
+        font-size: 8px; 
         color: black; }
     table {
         font-size: 12px;
