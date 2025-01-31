@@ -37,7 +37,7 @@ th, td {
     border: 1px solid #ddd;
     padding: 12px;
     text-align: left;
-    color: black
+    color: black;
     white-space: normal; 
     word-break: normal;  
     word-wrap: break-word;  
@@ -73,13 +73,14 @@ p {
 }
 @media (max-width: 768px) {
     table {
-        font-size: 10px;
+        font-size: 12px;
         table-layout: auto; 
         border-collapse: collapse;
         width: 100%;}
     th, td {
         padding: 8px;
-        text-align: left; }
+        text-align: left;
+        color: black;}
     .table-container {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
@@ -91,6 +92,6 @@ p {
         font-size: 16px;
         padding: 8px 12px; }
         p {
-        font-size: 12px; 
+        font-size: 10px; 
         color: black; }
 }
