@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parteiprogramme BTW 2025</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="script.js" defer></script> 
+</head>
+<body>
+    <h1>Parteiprogramme zur Bundestagswahl 2025</h1>
+    <div class="filter-container">
+        <label for="partyFilter"><strong>Filter nach Partei:</strong> </label>
+        <select id="partyFilter" onchange="filterTable()">
+            <option value="">Alle Parteien</option>
+            <option value="afd">AfD</option>
+            <option value="bsw">BSW</option>
+            <option value="cdu/csu">CDU/CSU</option>
+            <option value="fdp">FDP</option>
+            <option value="grüne">Grüne</option>
+             <option value="linke">Linke</option>
+              <option value="spd">SPD</option>
+          
+        </select>
+    </div>
+    <div class="table-container">
+         <table>
+            <thead>
+                <tr>
+                    <th>Partei</th>
+                    <th>Wirtschaft, Energie & Infrastruktur</th>
+                    <th>Soziales, Gesundheit & Rente</th>
+                    <th>Außenpolitik, Migration & Innere Sicherheit</th>
+                    <th>Familien- & Bildungspolitik</th>
+                    <th>Finanzen & Steuern</th>
+                    <th>Kultur, Medien & Demokratie</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- AfD -->
+                <tr>
+                    <td>AfD</td>
+                    <td>
+                        <ul>
+                            <li>Stärkung des Wirtschaftsstandorts Deutschland</li>
+                            <li>Förderung der Automobilindustrie und Abschaffung von CO₂-Abgaben</li>
+                            <li>Wiedereinstieg in Kernenergie, Ablehnung des Kohleausstiegs</li>
+                            <li>Bürokratieabbau</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Reform des Rentensystems mit höherem Rentenniveau</li>
+                            <li>Reform des Bürgergeldes zur Förderung von Arbeitsanreizen</li>
+                            <li>Unterstützung für pflegende Angehörige</li>
+                            <li>Ablehnung von Impfpflicht und Cannabis-Legalisierung</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Ablehnung der EU-Schuldenpolitik und Forderung nach einem Austritt aus dem Euro-System</li>
+                            <li>Begrenzung der Zuwanderung auf qualifizierte Fachkräfte</li>
+                            <li>Stärkere Rückführungen und Einschränkung des Asylrechts</li>
+                            <li>Verschärfte Maßnahmen gegen Kriminalität und Extremismus</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Förderung traditioneller Familienstrukturen</li>
+                            <li>Ablehnung von Genderpolitik und LGBTQ+-Förderung</li>
+                            <li>Verbesserung des Bildungssystems mit Leistungsorientierung</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Steuervereinfachung und Entlastung des Mittelstands</li>
+                            <li>Abschaffung der Vermögens- und Erbschaftssteuer</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Stärkung der "deutschen Leitkultur"</li>
+                            <li>Reform des öffentlich-rechtlichen Rundfunks und Abschaffung der GEZ</li>
+                            <li>Einführung von Volksabstimmungen nach Schweizer Modell</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <!-- BSW -->
+                <tr>
+                    <td>BSW</td>
+                    <td>
+                        <ul>
+                            <li>Kampf gegen die Deindustrialisierung durch Senkung der Energiepreise mittels Technologieoffenheit</li>
+                            <li>Förderung des Mittelstands durch Bürokratieabbau</li>
+                            <li>Reform der Schuldenbremse zur Finanzierung öffentlicher Projekte</li>
+                            <li>Investitionen in Infrastruktur</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Mindestlohn auf 15 Euro erhöhen</li>
+                            <li>Einführung einer Bürgerversicherung für alle</li>
+                            <li>Rentenreform nach österreichischem Vorbild mit höheren Renten</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Deutschland als Friedensmacht, keine Waffenlieferungen in Kriegsgebiete</li>
+                            <li>Diplomatische Lösungen für Ukraine- und Nahost-Konflikte</li>
+                            <li>Ablehnung einer Militarisierung Deutschlands, keine NATO-Aufrüstung</li>
+                            <li>Stärkung der Abrüstung und Rüstungskontrolle</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Investitionen in Bildung und Digitalisierung</li>
+                            <li>Ausbau der frühkindlichen Bildung und verpflichtende Sprachtests</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Einführung einer Vermögenssteuer für hohe Vermögen</li>
+                            <li>Schließung von Steuerschlupflöchern für Großkonzerne</li>
+                            <li>Reduzierung der Steuerlast für Arbeitnehmer und kleine Unternehmen</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Direkte Demokratie durch Volksabstimmungen stärken</li>
+                            <li>Reform der öffentlich-rechtlichen Medien und GEZ-Abschaffung</li>
+                            <li>Stärkung des Datenschutzes und Abbau übermäßiger Bürokratie</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <!-- CDU/CSU -->
+                <tr>
+                    <td>CDU/CSU</td>
+                    <td>
+                        <ul>
+                            <li>Bürokratieabbau und Förderung von Innovationen</li>
+                            <li>Energiepreise senken, Kernenergie als Option prüfen</li>
+                            <li>Reform des Emissionshandels für marktwirtschaftlichen Klimaschutz</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Abschaffung des Bürgergelds, Einführung einer neuen Grundsicherung</li>
+                            <li>Förderung von Eigentum und Vermögensbildung</li>
+                            <li>Einführung einer „Aktivrente“: Steuerfreiheit für weiterarbeitende Rentner</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Striktere Grenzkontrollen und konsequente Abschiebungen</li>
+                            <li>Einschränkung des Familiennachzugs und Sozialleistungen für Ausreisepflichtige auf „Bett, Brot und Seife“</li>
+                            <li>Mehr Überwachung, schnellere Strafverfahren, härtere Strafen für Extremisten</li>
+                             <li>Einschränkung der doppelten Staatsbürgerschaft</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Förderung von Ehe und Familie, Abschaffung des Selbstbestimmungsgesetzes</li>
+                            <li>Ausbau der frühkindlichen Bildung und verpflichtende Sprachtests</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Steuerentlastungen für Unternehmen und Bürger, Senkung der Unternehmenssteuer auf 25%</li>
+                            <li>Förderung von Investitionen in zukunftsweisende Technologien</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Stärkung der deutschen Leitkultur</li>
+                        </ul>
+                    </td>
+                </tr>
+                
+                 <!-- FDP -->
+                <tr>
+                    <td>FDP</td>
+                <td>
+                <ul>
+                    <li>Bürokratieabbau durch ein dreijähriges Moratorium für neue Regulierungen</li>
+                    <li>Förderung von Startups und Kapitalmarktinvestitionen</li>
+                    <li>Marktwirtschaftlicher Klimaschutz durch CO₂-Bepreisung statt Subventionen</li>
+                    <li>Förderung von Kernenergie, insbesondere neuer Reaktortechnologien wie Dual-Fluid-Reaktoren</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Abschaffung des Bürgergeldes in der jetzigen Form, Einführung einer negativen Einkommensteuer</li>
+                    <li>Flexibilisierung der Arbeitszeit mit Wochenhöchstarbeitszeit statt täglicher Begrenzung</li>
+                    <li>Reform des Rentensystems mit Aktienrente nach schwedischem Modell</li>
+                    <li>Stärkere Eigenverantwortung bei Arbeitslosenversicherung und Altersvorsorge</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Steuerung der Migration durch ein Punktesystem für Fachkräfte und Striktere Rückführungen und Einschränkungen für irreguläre Migration</li>
+                    <li>Verpflichtende Sprachtests und Arbeitsintegration für Migranten</li>
+                    <li>Stärkung der NATO und Ausbau der Verteidigungsfähigkeit Deutschlands</li>
+                    <li>Unterstützung der Ukraine, aber keine direkte militärische Beteiligung</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Verbesserung frühkindlicher Bildung durch bundesweite Standards</li>
+                    <li>Mehr Autonomie für Schulen und einheitliche Abschlussprüfungen</li>
+                    <li>Förderung von MINT-Fächern und Digitalisierung im Unterricht</li>
+                    <li>Ausbau von Hochschulfreiheiten und steuerliche Förderung von Weiterbildung</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Reduzierung der Unternehmenssteuer auf unter 25 %</li>
+                    <li>Steuerentlastungen für Bürger und Unternehmen, vollständige Abschaffung des Solidaritätszuschlags</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Ablehnung von Massenüberwachung, Netzsperren und anlassloser Vorratsdatenspeicherung</li>
+                </ul>
+            </td>
+        </tr>
+       <!-- Grüne -->
+              <tr>
+        <td>Grüne</td>
+        <td>
+            <ul>
+                <li>Förderung von klimaneutraler Industrie, Abkehr von fossilen Brennstoffen Klimaneutralität bis 2045</li>
+                <li>Bürokratieabbau und Digitalisierung der Verwaltung</li>
+                <li>Stärkung von Start-ups und Innovationsförderung</li>
+                <li>Förderung von Kreislaufwirtschaft und nachhaltigen Finanzmärkten</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Sozial gerechter Klimaschutz durch gezielte Förderprogramme</li>
+                <li>Stärkung von Tarifbindung und Mitbestimmung</li>
+                <li>Förderung der Gleichstellung von Frauen im Arbeitsmarkt</li>
+                <li>Bessere Vereinbarkeit von Beruf und Familie</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Förderung von Integration durch Sprach- und Arbeitsprogramme</li>
+                <li>Anerkennung ausländischer Berufsabschlüsse erleichtern</li>
+                <li>Schutz von Geflüchteten und Reform der EU-Migrationspolitik</li>
+                <li>Unterstützung der Ukraine und Reform der Bundeswehr für moderne Verteidigungsfähigkeit</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Reform der Schuldenbremse für mehr Investitionen in Bildung und Infrastruktur</li>
+                <li>Ausbau frühkindlicher Bildung und kostenlose Kitas</li>
+                <li>Förderung von Digitalisierung und MINT-Fächern in Schulen</li>
+                <li>Stärkere Unterstützung für Hochschulen und Wissenschaft</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Erhöhung des Grundfreibetrags zur Entlastung niedriger Einkommen</li>
+                <li>Einführung einer nationalen Vermögenssteuer</li>
+                <li>Reform der Erbschaftssteuer, um große Erbschaften stärker zu besteuern</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Kampf gegen Rassismus und Diskriminierung</li>
+            </ul>
+        </td>
+    </tr>
+                    <!-- Linke -->
+                 <tr>
+            <td>Linke</td>
+            <td>
+                <ul>
+                    <li>Stärkere Regulierung von Konzernen, insbesondere im Lebensmitteleinzelhandel und bei Energiekonzernen</li>
+                    <li>Beschleunigter Ausbau erneuerbarer Energien und Rückführung der Energiewirtschaft in öffentliche Hand</li>
+                    <li>Erhöhung der Körperschaftssteuer für große Unternehmen auf 25 %</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Einführung eines bundesweiten Mietendeckels</li>
+                    <li>Einführung einer sanktionsfreien Mindestsicherung von mindestens 1.400 Euro</li>
+                    <li>Rentenalter auf 65 Jahre senken, abschlagsfreie Rente ab 60 nach 40 Arbeitsjahren</li>
+                    <li>Einführung einer solidarischen Erwerbstätigenversicherung für alle Berufsgruppen</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Recht auf Asyl ohne Einschränkungen, keine Abschiebungen in unsichere Herkunftsländer</li>
+                    <li>Ausbau von Sozialleistungen für Migranten zur besseren Integration</li>
+                    <li>Abrüstung und Verbot von Waffenexporten</li>
+                    <li>Deutschland soll sich aus internationalen Militäreinsätzen zurückziehen</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Abschaffung der Schuldenbremse für mehr Investitionen in Bildung und Infrastruktur</li>
+                    <li>Gebührenfreie Kitas, Schulen und Universitäten für alle</li>
+                    <li>Ausbau von Ganztagsschulen und kostenloses Mittagessen für Kinder</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Mindestlohn auf mindestens 15 Euro erhöhen</li>
+                    <li>Einführung einer Vermögenssteuer für hohe Einkommen und Unternehmen</li>
+                    <li>Einführung einer Finanztransaktionssteuer zur Regulierung des Kapitalmarktes</li>
+                    <li>Reform der Erbschaftssteuer mit höheren Abgaben für große Vermögen</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Kampf gegen Rassismus und soziale Ungleichheit</li>
+                </ul>
+            </td>
+        </tr>
+            <!-- Spd -->
+<tr>
+    <td>SPD</td>
+    <td>
+        <ul>
+            <li>Förderung von Wachstum und sicheren Arbeitsplätzen</li>
+            <li>Investitionen in klimafreundliche Technologien</li>
+            <li>Senkung der Energiepreise und Unterstützung der Industrie</li>
+        </ul>
+    </td>
+    <td>
+        <ul>
+            <li>Höherer Mindestlohn</li>
+            <li>Stabile Renten</li>
+            <li>Sozialer Wohnungsbau fördern</li>
+            <li>Mehr Personal in Krankenhäusern</li>
+        </ul>
+    </td>
+    <td>
+        <ul>
+            <li>Stärkung der EU und internationale Zusammenarbeit für eine friedliche Weltordnung</li>
+            <li>Steuerung der Migration mit humanitären Standards und fairen Verfahren</li>
+            <li>Unterstützung der Ukraine</li>
+        </ul>
+    </td>
+    <td>
+        <ul>
+            <li>Bessere Kitas und Schulen</li>
+            <li>Mehr BAföG</li>
+            <li>Fachkräfteoffensive für Lehrer und Erzieher</li>
+        </ul>
+    </td>
+    <td>
+        <ul>
+            <li>Entlastungen für Normal- und Geringverdiener</li>
+        </ul>
+    </td>
+    <td>
+        <ul>
+            <li>Kampf gegen Extremismus</li>
+        </ul>
+    </td>
+</tr>
+    </tbody>
+</table>
+    </div>
+    <div class="images">
+        <img src="afd.png" alt="afd" class="wordcloud" id="afdImg">
+        <img src="bsw.png" alt="bsw" class="wordcloud" id="bswImg">
+        <img src="cdu.png" alt="cdu" class="wordcloud" id="cduImg">
+        <img src="fdp.png" alt="fdp" class="wordcloud" id="fdpImg">
+        <img src="grüne.png" alt="grüne" class="wordcloud" id="grüneImg">
+        <img src="linke.png" alt="linke" class="wordcloud" id="linkeImg">
+        <img src="spd.png" alt="spd" class="wordcloud" id="spdImg">
+    </div>
+     <ul>
+        Die Zusammenfassung der Wahlprogramme zur Bundestagswahl 2025 wurde von Chatgpt erstellt, indem txt-Dateien der Wahlprogrammme zur Verfügung gestellt wurden. Sie erhebt keinen Anspruch auf Richtigkeit und Vollständigkeit.
+    </ul>
+
+</body>
+</html>
