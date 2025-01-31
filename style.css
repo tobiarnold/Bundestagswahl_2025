@@ -73,25 +73,24 @@ p {
 }
 @media (max-width: 768px) {
     table {
-        font-size: 12px;
+        font-size: 14px;
         table-layout: auto; 
         border-collapse: collapse;
         width: 100%;}
     th, td {
         padding: 8px;
-        text-align: left;
-        color: black;}
+        text-align: left;}
     .table-container {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         max-width: 100%; }
+     p {
+        font-size: 8px; 
+        color: black; }
     .wordcloud {
         width: 100%; 
         max-width: 100%; }
     #partyFilter {
         font-size: 16px;
         padding: 8px 12px; }
-        p {
-        font-size: 10px; 
-        color: black; }
 }
